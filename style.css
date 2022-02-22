@@ -107,8 +107,7 @@ main{
 	border:none;
 }
 .section-1 .bookmark-btn{
-	width: min-content;
-	padding: 0;
+	padding: 0 ;
 }
 #mcraft-logo{
 	width: 56px;
@@ -315,10 +314,7 @@ input[type='radio'] {
 .Btn:hover, .continue:hover{
 	background-color: hsl(176, 72%, 28%);
 }
-#bookmark-img{
-	cursor: pointer;
 
-}
 
 @media (min-width: 550px){
 	main{
@@ -398,7 +394,7 @@ input[type='radio'] {
 		width: 170px;
 		display: flex;
 		align-items: center;
-		padding: 0;
+		padding: 0 14px 0 0;
 	}
 
 	.bookmark-text{
