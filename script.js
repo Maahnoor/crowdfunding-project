@@ -82,15 +82,11 @@ $(".bookmark-btn").click(function(){
     $(".bookmark-text").css("color","hsl(176, 72%, 28%)");
 
     $(".bookmark-btn").css("background-color","#F4F8F9");
-    if (window.matchMedia('(max-width: 767px)').matches) {
-    $(".bookmark-btn").css("width","182px");}
 
   } else{
     $("#bookmark-img").attr('src','images/icon-bookmark.svg');
      $(".bookmark-text").html('Bookmark');
-     if (window.matchMedia('(max-width: 767px)').matches) {
-    $(".bookmark-btn").css("width","170px");
-}
+  
     $(".bookmark-text").css("color","hsl(0, 0%, 48%)");
   }
 })
