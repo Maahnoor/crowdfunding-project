@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	margin: 20px 0;
+	color: hsl(0, 0%, 48%);
+	line-height: 1.6;
+	font-size: 14px;
+}
+
+
+body{
+	font-family: 'Commissioner', sans-serif;
+	font-size: 16px;
+	color: black;
+	background-color: #fafafa;
+	position: relative;
+
+}
+header{
+	background-image: url(images/image-hero-mobile.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+header div{
+	height: 60px;
+}
+#drop-btn{
+	cursor: pointer;
+}
+#drop-btn:active{
+	cursor: default;
+}
+
+
+.dropdown-menu{
+	min-width:315px;
+	padding-top: 9.5px;
+	padding-bottom: 9.5px;
+	border-radius: 10px;
+}
+
+.dropdown-menu>li>a{
+	font-size: 18px;
+	font-weight: 500;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+main{
+	padding: 0 30px;
+	position: absolute;
+	top: 55vw;
+	margin: auto;
+}
+.section-1, .section-2, .section-3{
+	background-color: white;
+	padding: 40px 20px;
+	margin-bottom: 30px;
+	border: 1px solid #f2f2f2;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.section-1{
+	align-items: center;
+	
+	text-align: center;
+	height: 290px;
+}
+.section-1 h3{
+	font-weight: 700;
+}
+
+.section-1 button{
+	background-color: hsl(176, 50%, 47%);
+	color: white;
+	font-weight: 500;
+	padding: 17px 35px;
+	border-radius: 35px;
+	border:none;
+}
+.section-1 .bookmark-btn{
+	width: min-content;
+	padding: 0;
+}
+#mcraft-logo{
+	width: 56px;
+	position: relative;
+	top: -70px;
+}
+#subsection{
+	position: relative;
+	top: -60px;
+}
+
+#bookmark{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.section-2{
+	align-items: center;
+
+}
+
+.section-2 h1{
+	margin-top: 10px;
+}
+.section-2 hr{
+	width: 30%;
+}
+.mini-section-2{
+	text-align: center;
+}
+.section-3 >div,
+.modal-div{
+	margin-bottom: 30px;
+	border: 1px solid lightgray;
+	padding: 20px;
+	border-radius: 10px;
+
+}
+
+
+.Btn{
+	background-color: hsl(176, 50%, 47%);
+	color: white;
+	font-weight: 500;
+	padding: 13px 25px;
+	border-radius: 25px;
+	border:none;
+	transition: background-color 0.3s;
+}
+.continue{
+	transition: background-color 0.3s;
+}
+.section-3 h5{
+	font-weight: 700;
+}
+.pledge-count{
+	color: hsl(0, 0%, 48%);
+	display: flex;
+	align-items: center;
+	margin: 30px 0;
+}
+.pledge-count h2{
+	color: black;
+	font-weight: 700;
+	display: inline;
+	margin-right: 10px;
+}
+.pledge{
+	color:hsl(176, 50%, 47%);
+	font-weight: 500;
+	margin-top: 7px;
+}
+
+#exampleModalLong .modal-dialog{
+	width: 90%;
+	margin: 120px auto;
+}
+.form-check{
+	display: flex;
+	align-items: center;
+}
+.dollar-sign-div{
+	position: relative;
+}
+.dollar-sign{
+	font-weight: 700;
+	color: hsl(0, 0%, 48%);
+	position: absolute;
+	left: 15px;
+    top: 29px;
+}
+input[type='radio'] {
+	width: 30px;
+
+    margin-right: 13px;
+    height: 30px;
+	accent-color:  hsl(179, 55%, 40%);
+}
+.form-check-label{
+	margin-bottom: 0;
+}
+.form-check h5{
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 16px;
+	transition: color 0.3s;
+}
+.no-reward{
+	margin-bottom: 0 !important;
+}
+
+.form-check h5:hover{
+	color: hsl(176, 50%, 47%);
+	cursor: pointer;
+}
+.disable{
+	pointer-events: none;
+    opacity: 0.4;
+}
+.disable-btn{
+	background-color:  hsl(0, 0%, 48%);
+}
+
+.modal-body button{
+	background-color: hsl(176, 50%, 47%);
+	color: white;
+	font-weight: 500;
+	padding: 13px 25px;
+	border-radius: 25px;
+	border:none;
+	margin: 15px 5px;
+}
+
+.input-amount{
+	width: 100px;
+	font-weight: 500;
+	padding: 13px 0 13px 30px;
+	border-radius: 25px;
+	border:1px solid #eee;
+	margin: 15px 15px 15px 0;
+}
+.modal-body hr{
+	width: 100%;
+	margin: 10px 0;
+}
+.hidden1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid lightgray;
+}
+.bookmark-text{
+	display: none;
+}
+.modal-div h4{
+	color: black;
+	margin-right: 4px;
+}
+.modal-div .pledge-count{
+	margin: 15px 0;
+}
+.modal-desc{
+	font-size: 15px;
+}
+.enter-para{
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.selected-pledge{
+	border: 2px solid hsl(176, 50%, 47%);
+}
+
+#exampleModalCenter{
+	background-color: white;
+	border: 1px solid #f2f2f2;
+	border-radius: 10px;
+	text-align: center;
+	padding: 40px 17px;
+	height: min-content;
+	margin: auto;
+	width: 90%;
+}
+#exampleModalCenter p{
+	line-height: 1.8;
+}
+
+
+#exampleModalCenter h4{
+	margin-top: 20px;
+	font-weight: 700;
+}
+.progress{
+	width: 100%;
+	height: 12px;
+}
+.progress-bar{
+	background-color: hsl(176, 50%, 47%);
+	border-radius: 12px;
+}
+.Btn:hover, .continue:hover{
+	background-color: hsl(176, 72%, 28%);
+}
+#bookmark-img{
+	cursor: pointer;
+
+}
+
+@media (min-width: 550px){
+	main{
+		top:17vw;
+		width: 70%;
+		left: 15%;
+	}
+}
+
+
+@media (min-width: 780px){
+	header{
+		background-image: url(images/image-hero-desktop.jpg);
+		height: 400px;
+		background-size: contain;
+		padding: 50px 100px;
+	}
+	#hamburger{
+		display: none;
+	}
+	.dropdown-menu{
+		display: flex;
+		position: static;
+		background-color: transparent;
+		padding: 0;
+		margin: 0;
+		border: none;
+		box-shadow: none;
+	}
+	.dropdown-menu>li>a{
+		color: white;
+		padding-top: 0;
+
+	}
+	.divider{
+		display: none;
+	}
+	main{
+		width: 55%;
+		top: 20vw;
+		left: 22.5%;
+	}
+	.mini-section-2{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		text-align: left;
+	}
+	.mini-section-2 div{
+		flex-basis: 33.33%;
+	}
+	.mini-section-2 hr{
+		transform: rotate(90deg);
+		margin-top: 40px;
+		width: 70px;
+	}
+	#subsection{
+		width: 100%;
+	}
+	.desktop-pledge-div{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.form-check .pledge{
+		margin: 0 10px;
+	}
+	.desktop-count-div{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.section-1 .bookmark-btn{
+		color: hsl(0, 0%, 48%);
+		background-color: #F4F8F9;
+		width: 170px;
+		display: flex;
+		align-items: center;
+		padding: 0;
+	}
+
+	.bookmark-text{
+		display: block;
+		padding-left: 12px;
+		font-weight: 700;
+	}
+	.pledge-count{
+		margin: 0;
+	}
+
+#exampleModalCenter{
+	padding-right: 40px;
+	padding-left: 40px;
+	width: 35%;
+}
+#exampleModalCenter .modal-dialog{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#exampleModalLong .modal-dialog{
+	width: 55%;
+}
+.modal-div{
+	height: min-content;
+}
+#exampleModalLong .modal-div{
+	position: relative;
+}
+.modal-div .pledge-count{
+	    position: absolute;
+	    margin: 0;
+	  top: 24px;
+	  right:20px;
+	  
+}
+.form-check h5{
+	margin: 0;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+}
+.section-1, .section-2, .section-3{
+	padding-left: 40px;
+	padding-right: 40px; 
+}
+.enter-para{
+	margin: 0;
+}
+.hidden1{
+	flex-direction: row;
+	justify-content: space-between;
+}
+.hidden1 div{
+	display: flex;
+
+}
+}
