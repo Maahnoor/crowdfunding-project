@@ -391,7 +391,6 @@ input[type='radio'] {
 	.section-1 .bookmark-btn{
 		color: hsl(0, 0%, 48%);
 		background-color: #F4F8F9;
-		width: 170px;
 		display: flex;
 		align-items: center;
 		padding: 0 20px 0 0;
